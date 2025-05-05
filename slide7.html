@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLex - Advisory Board</title>
+    <style>
+        :root {
+            --primary: #006699;
+            --secondary: #333333;
+            --background: #ffffff;
+            --text: #333333;
+            --accent: #ff6b00;
+            --border: #dddddd;
+            --card-bg: #f9f9f9;
+            --policy: #8e44ad;
+            --corporate: #e74c3c;
+            --digital: #3498db;
+            --civil: #27ae60;
+            --public: #f39c12;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            margin-bottom: 2rem;
+        }
+        
+        .title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            color: var(--secondary);
+        }
+        
+        .advisors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .advisor-card {
+            background-color: var(--card-bg);
+            border-radius: 4px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .advisor-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .policy-icon {
+            background-color: var(--policy);
+        }
+        
+        .digital-icon {
+            background-color: var(--digital);
+        }
+        
+        .civil-icon {
+            background-color: var(--civil);
+        }
+        
+        .corporate-icon {
+            background-color: var(--corporate);
+        }
+        
+        .public-icon {
+            background-color: var(--public);
+        }
+        
+        .advisor-content {
+            flex: 1;
+        }
+        
+        .advisor-name {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+            font-size: 1.1rem;
+            color: var(--secondary);
+        }
+        
+        .advisor-domain {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .advisor-bio {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .advisor-email {
+            font-size: 0.85rem;
+            color: var(--primary);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Advisory Board</div>
+        <div class="subtitle">Expertise multidisciplinaire pour guider le développement d'EasyLex</div>
+    </div>
+    
+    <div class="advisors-grid">
+        <div class="advisor-card">
+            <div class="advisor-icon policy-icon">AW</div>
+            <div class="advisor-content">
+                <div class="advisor-name">Ariane Wautelet</div>
+                <div class="advisor-domain">Politique Publique</div>
+                <div class="advisor-bio">Conseillère politique avec plus de 15 ans d'expérience</div>
+                <div class="advisor-email">awautelet@gmail.com</div>
+            </div>
+        </div>
+        
+        <div class="advisor-card">
+            <div class="advisor-icon digital-icon">SL</div>
+            <div class="advisor-content">
+                <div class="advisor-name">Shervin Labani</div>
+                <div class="advisor-domain">Management & Transformation digitale</div>
+                <div class="advisor-bio">Consultant chez Kronos Group</div>
+                <div class="advisor-email">shervinlabani@gmail.com</div>
+            </div>
+        </div>
+        
+        <div class="advisor-card">
+            <div class="advisor-icon civil-icon">MV</div>
+            <div class="advisor-content">
+                <div class="advisor-name">Maxime Van Caillie</div>
+                <div class="advisor-domain">Société civile</div>
+                <div class="advisor-bio">Commerce extérieur</div>
+                <div class="advisor-email">maxime.vancaillie@gmail.com</div>
+            </div>
+        </div>
+        
+        <div class="advisor-card">
+            <div class="advisor-icon corporate-icon">AB</div>
+            <div class="advisor-content">
+                <div class="advisor-name">Ayoub Boughrada</div>
+                <div class="advisor-domain">Corporate</div>
+                <div class="advisor-bio">Compliance</div>
+                <div class="advisor-email">ayoub.boughrada@parlement.brussels</div>
+            </div>
+        </div>
+        
+        <div class="advisor-card">
+            <div class="advisor-icon public-icon">EM</div>
+            <div class="advisor-content">
+                <div class="advisor-name">Eduard Mkrtchian</div>
+                <div class="advisor-domain">Administration publique</div>
+                <div class="advisor-bio">Data Officer au SPF Bosa</div>
+                <div class="advisor-email">edouardmkrtchyan@gmail.com</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Notre Advisory Board apporte une expertise diversifiée, essentielle pour naviguer dans l'écosystème complexe de l'information juridique belge.
+    </div>
+</body>
+</html>
